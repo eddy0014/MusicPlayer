@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="end">End</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_art">Music Art</string>
+    <string name="pause">Pause</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="tracks_tab_text">Tracks</string>
+    <string name="artists_tab_text">Artists</string>
+    <string name="albums_tab_text">Albums</string>
+    <string name="options">Options</string>
+    <string name="settings">Settings</string>
+    <string name="scan">Scan</string>
+    <string name="search_results_text">Search Results</string>
+</resources>

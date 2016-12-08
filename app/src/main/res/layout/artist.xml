@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_effect_android_image_2"
+    android:clickable="true"
+    android:onClick="artistPicked"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artistName"
+        android:textColor="#263238"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

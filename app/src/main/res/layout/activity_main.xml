@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#cfd8dc"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="#607d8b">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#607d8b">
+
+            <TextView
+                android:id="@+id/tracksTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tracks_tab_text"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:background="@drawable/ripple_effect_android_image"
+                android:onClick="showTracksList" />
+
+            <TextView
+                android:id="@+id/artistsTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artists_tab_text"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:background="@drawable/ripple_effect_android_image"
+                android:onClick="showArtistsList"/>
+
+            <TextView
+                android:id="@+id/albumsTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/albums_tab_text"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:background="@drawable/ripple_effect_android_image"
+                android:onClick="showAlbumsList"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#cfd8dc"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/ripple_effect_android_image" >
+
+        <TextView
+            android:id="@+id/songNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="#607d8b"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/previousAction"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/previous"
+            android:title="@string/previous"
+            android:clickable="true"
+            android:background="@drawable/ripple_effect_android_image"
+            android:layout_below="@+id/songNameText"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/pauseAction"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/play2"
+            android:title="@string/pause"
+            android:clickable="true"
+            android:background="@drawable/ripple_effect_android_image"
+            android:layout_toRightOf="@+id/previousAction"
+            android:layout_below="@+id/songNameText"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/nextAction"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/next"
+            android:title="@string/next"
+            android:clickable="true"
+            android:background="@drawable/ripple_effect_android_image"
+            android:layout_toRightOf="@+id/pauseAction"
+            android:layout_below="@+id/songNameText"
+            android:layout_margin="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

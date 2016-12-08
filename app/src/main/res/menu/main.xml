@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.eddy.SearchableActivity" >
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+        android:id="@+id/options"
+        android:title="@string/options"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_white" >
+
+        <menu>
+            <!-- android:icon="@android:drawable/ic_menu_preferences"
+                 probably will need to include this in item -->
+            <!--
+            <item
+                android:id="@+id/settingsOption"
+                app:showAsAction="ifRoom"
+                android:title="@string/settings" />
+            -->
+
+            <item
+                android:id="@+id/scanOption"
+                app:showAsAction="ifRoom"
+                android:title="@string/scan" />
+
+        </menu>
+
+    </item>
+
+</menu>
